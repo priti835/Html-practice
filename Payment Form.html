@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <form action="" >
+        <h1 class="main_heading">Payment Form</h1>
+        <p>Required Fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Name: *<input type="text" name="name" placeholder="Enter your name" required> </p>
+        <fieldset>
+            <legend>Gender *</legend>
+        <p>
+            Male <input type="radio" name="gender" id="" required>
+            Female <input type="radio" name="gender" id="" required>
+        </p>
+    </fieldset>
+    <p>Address: <br> <textarea name="address" id="address" cols="100" rows="10" placeholder="Enter your address" required></textarea></p>
+    <p>Email: *<input type="email" name="email" id="email" placeholder="Enter your email" required></p>
+    <p>Pincode: *<input type="number" name="pincode" id="pincode" placeholder="Enter pincode" required></p>
+    <h2>Payment Information</h2>
+    <p>Card Type: *<select name="card_type" id="card_type" required>
+        <option value="">--Select a Card Type--</option>
+        <option value="visa">Visa</option>
+        <option value="rupay">rupay</option>
+        <option value="Master Card">Master Card</option>
+        
+    </select></p>
+    <p> Card Number *<input type="number" required name="card_number" id="card_number" placeholder="1111-2222-3333-4444"> </p>
+    <p>Expiration Date: *<input type="date"  name="exp_date" id="exp_date"required> </p>
+    <p>CVV *<input type="password" name="cvv" id="cvv" placeholder="Enter CVV" required> </p>
+    <input type="submit" value="Pay Now">
+    </form>
+</div>
+</body>
+</html>
